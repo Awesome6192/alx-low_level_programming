@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	chsr ch = 'a';
+	char ch = 'a';
 
 	while (ch <= 'z')
 	{
