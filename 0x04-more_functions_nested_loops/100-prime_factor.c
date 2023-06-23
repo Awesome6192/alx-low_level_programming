@@ -24,7 +24,7 @@ int main(void)
 	{
 		while (n % i == 0)
 		{
-			max = 1;
+			max = i;
 			n = n / i;
 		}
 	}
