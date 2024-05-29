@@ -1,9 +1,9 @@
+# create first useful makefile
+
 CC = gcc
 SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
-	NAME = school
+OBJ = ${SRC:%.c=%.0}
+NAME = school
 
-all: $(OBJ)
-	@echo "Compiling..."
-	@$(CC) $(OBJ) -o $(NAME)
-	@echo "Done."
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
